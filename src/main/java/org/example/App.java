@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -7,6 +9,22 @@ package org.example;
 public class App 
 {
     public static void main( String[] args ){
+
+        System.out.println("Please enter vehicle name:");
+        Scanner scanner = new Scanner(System.in);
+        String vehicleName = scanner.nextLine();
+        System.out.println("Entered a name: " + vehicleName);
+
+        Scanner scanner2 = new Scanner(System.in);
+        int enteredNumber = scanner.nextInt();
+
+
+
+
+
+
+
+
         System.out.println("Welcome to the racing game!");
        Car carReference = new Car();
        carReference.name = "Audi";
