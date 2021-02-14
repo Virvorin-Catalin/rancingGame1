@@ -50,13 +50,13 @@ public class App {
         engine1.capacity = 2000;
 
        Car carReference = new Car(engine1);
-       carReference.name = "Audi";
-       carReference.color = "red";
-       carReference.maxSpeed = 260;
-       carReference.mileage = 6.2;
-       carReference.fuelLevel = 100;
+       carReference.setName("Audi");
+       carReference.setColor("red");
+       carReference.setMaxSpeed(260);
+       carReference.setMileage(6.2);
+       carReference.setFuelLevel(100);
 
-       carReference.damaged = true;
+       carReference.setDamaged(true);
 
    //     carReference.engine = new Engine();
 //        carReference.engine.manufacturer = "VW";
@@ -73,7 +73,7 @@ public class App {
         Mechanic mechanic = new Mechanic();
         mechanic.repair(carReference);
 
-        System.out.println("Is car damaged? " + carReference.damaged);
+        System.out.println("Is car damaged? " + carReference.isDamaged());
 
         // One object whit two references
 
@@ -88,23 +88,23 @@ public class App {
 
 
    //    concatenation
-        System.out.println("Properties of " + carReference.name);
+        System.out.println("Properties of " + carReference.getName());
         //color: red
-        System.out.println("Color: " + carReference.color );
-        System.out.println("Max Speed: " + carReference.maxSpeed);
-        System.out.println("Mileage: " + carReference.mileage);
-        System.out.println("Fuel level: " + carReference.fuelLevel);
-        System.out.println("Racing number: " + carReference.racingNumber);
-        System.out.println("Damaged: " + carReference.damaged);
+        System.out.println("Color: " + carReference.getColor());
+        System.out.println("Max Speed: " + carReference.getMaxSpeed());
+        System.out.println("Mileage: " + carReference.getMileage());
+        System.out.println("Fuel level: " + carReference.getFuelLevel());
+        System.out.println("Racing number: " + carReference.getRacingNumber());
+        System.out.println("Damaged: " + carReference.isDamaged());
 
 //        carReference = null;
         Car car2 = new Car(new Engine());
-        car2.name ="Lamborghini";
-        car2.damaged = true;
+        car2.setName("Lamborghini");
+        car2.setDamaged(true);
 
-        System.out.println("Properties of " + car2.name);
-        System.out.println("Color: " + car2.color);
-        System.out.println("Damaged: " + car2.damaged);
+        System.out.println("Properties of " + car2.getName());
+        System.out.println("Color: " + car2.getColor());
+        System.out.println("Damaged: " + car2.isDamaged());
 
          // modulo (modulus) operator
 //        System.out.println(4 % 2);
