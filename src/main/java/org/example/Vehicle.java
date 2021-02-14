@@ -31,6 +31,10 @@ public class Vehicle {
       }
 
 
+      double mileageMultiplier = 1;
+       if (speed > 120) {
+       mileageMultiplier = speed / 100;
+       }
 
 // Audi is accelerating whit 60 km/h for 1h
        System.out.println(name + "is accelerating whit " + speed + " km/h for " + durationInHours + " h");
@@ -45,6 +49,8 @@ public class Vehicle {
 
        double usedFuel = traveledDistance * mileage / 100;
 
+       usedFuel *= mileageMultiplier;
+
        fuelLevel = fuelLevel - usedFuel;
        //same result as the instruction above
 //       fuelLevel -= usedFuel;
@@ -55,7 +61,7 @@ public class Vehicle {
    }
 
    public void  decelerate () {
-       // TODO: implement this
+       // todo: implement this
        System.out.println("This is just a demo method");
    }
 }
