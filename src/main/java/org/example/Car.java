@@ -7,5 +7,7 @@ package org.example;
 int doorCount;
 
 
-
-}
+  public Car(Engine engine) {
+   super(engine);
+  }
+ }
