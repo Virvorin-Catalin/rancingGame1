@@ -10,8 +10,8 @@ public class App {
 
 
     public static void main( String[] args ){
-//        Game game = new Game();
-//        game.start();
+       Game game = new Game();
+        game.start();
 
         // method implementation taken from object's class, not from variable's class
         CheatingVehicle cheater = new CheatingVehicle();
